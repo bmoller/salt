@@ -1,0 +1,27 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# History Options
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=2000
+export HISTSIZE=1000
+shopt -s histappend
+
+export  CFLAGS="-march=native -O2 -pipe"
+export  CXXFLAGS="-march=native -O2 -pipe"
+export  EDITOR="vim"
+export  MAKEFLAGS="-j{{ grains.num_cpus // 2 }}"
+export  SSH_AUTH_SOCK="/home/{{ pillar['user']['name'] }}/.ssh/agent.socket"
+export  WORKON_HOME="~/.virtualenvs"
+
+complete -C aws_completer aws
+
+source  "/usr/bin/virtualenvwrapper.sh"
