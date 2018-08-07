@@ -1,13 +1,9 @@
 install_necessary_packages:
   pkg.latest:
-    - pkgs:
-      - python
-      - python-pip
-      - vim
+    - pkgs: {{ pillar['packages']['installed'] }}
 
 purge_crap:
   pkg.purged:
-    - pkgs:
-      - nano
+    - pkgs: {{ pillar['packages']['purged'] }}
 
 # vim: set ft=yaml:
