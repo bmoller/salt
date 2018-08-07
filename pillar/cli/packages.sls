@@ -1,6 +1,8 @@
 packages:
   installed:
+    - aws-cli
     - git
+    - bpython
     - rsync
     - vim
 
