@@ -9,3 +9,5 @@ purge_crap:
   pkg.purged:
     - pkgs:
       - nano
+
+# vim: set ft=yaml:

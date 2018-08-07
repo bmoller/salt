@@ -4,3 +4,5 @@ US/Central:
 systemd-timesyncd:
   service.running:
     - enable: True
+
+# vim: set ft=yaml:

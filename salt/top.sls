@@ -4,3 +4,5 @@ base:
     - packages
     - time
     - user
+
+# vim: set ft=yaml:

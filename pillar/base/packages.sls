@@ -1,7 +1,5 @@
 packages:
-  installed:
-    - git
-    - rsync
-    - vim
   purged:
     - nano
+
+# vim: set ft=yaml:

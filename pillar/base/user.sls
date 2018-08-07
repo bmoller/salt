@@ -4,3 +4,5 @@ user:
     - users
     - wheel
   shell: /bin/bash
+
+# vim: set ft=yaml:
